@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E43F56AB1BB028ED00226979 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F56AA1BB028ED00226979 /* Stack.swift */; settings = {ASSET_TAGS = (); }; };
+		E43F56AD1BB0292700226979 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F56AC1BB0292700226979 /* StackTests.swift */; settings = {ASSET_TAGS = (); }; };
+		E43F56AF1BB0297600226979 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F56AE1BB0297600226979 /* Queue.swift */; settings = {ASSET_TAGS = (); }; };
+		E43F56B11BB0298800226979 /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F56B01BB0298800226979 /* QueueTests.swift */; settings = {ASSET_TAGS = (); }; };
 		E44FC62C1BAC3D4300C2BF61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FC62B1BAC3D4300C2BF61 /* AppDelegate.swift */; };
 		E44FC62E1BAC3D4300C2BF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44FC62D1BAC3D4300C2BF61 /* Assets.xcassets */; };
 		E44FC6311BAC3D4300C2BF61 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E44FC62F1BAC3D4300C2BF61 /* MainMenu.xib */; };
@@ -27,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E43F56AA1BB028ED00226979 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		E43F56AC1BB0292700226979 /* StackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
+		E43F56AE1BB0297600226979 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		E43F56B01BB0298800226979 /* QueueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
 		E44FC6281BAC3D4300C2BF61 /* SwiftDataStructuresAndAlgorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataStructuresAndAlgorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44FC62B1BAC3D4300C2BF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E44FC62D1BAC3D4300C2BF61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +90,8 @@
 				E44FC62B1BAC3D4300C2BF61 /* AppDelegate.swift */,
 				E4EA71C31BAC40F400B17AE0 /* SinglyLinkedList.swift */,
 				E4EA71C71BADB00400B17AE0 /* DoublyLinkedList.swift */,
+				E43F56AA1BB028ED00226979 /* Stack.swift */,
+				E43F56AE1BB0297600226979 /* Queue.swift */,
 				E44FC62D1BAC3D4300C2BF61 /* Assets.xcassets */,
 				E44FC62F1BAC3D4300C2BF61 /* MainMenu.xib */,
 				E44FC6321BAC3D4300C2BF61 /* Info.plist */,
@@ -94,6 +104,8 @@
 			children = (
 				E4EA71C51BAC410A00B17AE0 /* SinglyLinkedListTests.swift */,
 				E4EA71C91BADB05400B17AE0 /* DoublyLinkedListTests.swift */,
+				E43F56AC1BB0292700226979 /* StackTests.swift */,
+				E43F56B01BB0298800226979 /* QueueTests.swift */,
 				E44FC63D1BAC3D4300C2BF61 /* Info.plist */,
 			);
 			path = SwiftDataStructuresAndAlgorithmsTests;
@@ -198,6 +210,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E43F56AF1BB0297600226979 /* Queue.swift in Sources */,
+				E43F56AB1BB028ED00226979 /* Stack.swift in Sources */,
 				E4EA71C41BAC40F400B17AE0 /* SinglyLinkedList.swift in Sources */,
 				E4EA71C81BADB00400B17AE0 /* DoublyLinkedList.swift in Sources */,
 				E44FC62C1BAC3D4300C2BF61 /* AppDelegate.swift in Sources */,
@@ -210,6 +224,8 @@
 			files = (
 				E4EA71C61BAC410A00B17AE0 /* SinglyLinkedListTests.swift in Sources */,
 				E4EA71CA1BADB05400B17AE0 /* DoublyLinkedListTests.swift in Sources */,
+				E43F56AD1BB0292700226979 /* StackTests.swift in Sources */,
+				E43F56B11BB0298800226979 /* QueueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
