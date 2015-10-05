@@ -44,6 +44,29 @@ public class ArraySorting<ItemT: Comparable> {
 			// insert i's at j
 			array[j] = current
 		}
+	}
+	
+	public class func selectionSort(inout array: [ItemT]) {
 		
+		let n = array.count
+		
+		if n <= 1 {
+			return
+		}
+		
+		for j in 0..<n-1 {
+			
+			var iMin = j		// minimum for the rest
+			
+			for i in j+1..<n {
+				if array[i] < array[iMin] {
+					iMin = i		// new minimum
+				}
+			}
+			
+			if iMin != j {
+				swap(&array[j], &array[iMin])
+			}
+		}
 	}
 }
