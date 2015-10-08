@@ -98,6 +98,27 @@ class ArraySortingTests: XCTestCase {
 		XCTAssert(isSorted(&stringArray))
 	}
 	
+	func testMergeSort() {
+		
+		ArraySorting.mergeSort(&emptyArray)
+		ArraySorting.mergeSort(&constantArray)
+		ArraySorting.mergeSort(&inOrderArray)
+		ArraySorting.mergeSort(&reverseArray)
+		ArraySorting.mergeSort(&randomArray)
+		ArraySorting.mergeSort(&largeRandomArray)
+		ArraySorting.mergeSort(&doubleArray)
+		ArraySorting.mergeSort(&stringArray)
+		
+		XCTAssert(isSorted(&emptyArray))
+		XCTAssert(isSorted(&constantArray))
+		XCTAssert(isSorted(&inOrderArray))
+		XCTAssert(isSorted(&reverseArray))
+		XCTAssert(isSorted(&randomArray))
+		XCTAssert(isSorted(&largeRandomArray))
+		XCTAssert(isSorted(&doubleArray))
+		XCTAssert(isSorted(&stringArray))
+	}
+	
 	///	Check whether the array is in sorted order
 	///
 	///	- parameter array:	target array
