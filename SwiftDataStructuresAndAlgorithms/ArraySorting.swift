@@ -152,5 +152,75 @@ public class ArraySorting<ItemT: Comparable> {
 		}
 	}
 	
+	// MARK: - quick sort
 	
+	public class func quickSort(inout array: [ItemT]) {
+		
+		quickSort(&array, iBegin: 0, iEnd: array.count)
+	}
+	
+	private class func quickSort(inout array: [ItemT], iBegin: Int, iEnd: Int) {
+		
+		let length = iEnd - iBegin
+		
+		switch length {
+		case 0, 1:
+			return
+		case 2:
+			if iBegin > iEnd {
+				swap(&array[iBegin], &array[iEnd])
+			}
+		default:
+			break
+		}
+		
+		// divide array into smaller part and larger part base on pivot
+		
+		var iPivot = quickSortPivot(&array, iBegin: iBegin, iEnd: iEnd)
+		
+		// swap pivot to front
+		if iPivot != iBegin {
+			swap(&array[iPivot], &array[iBegin])
+			iPivot = iBegin
+		}
+		
+		var iForeward = iBegin + 1
+		var iBackward = iEnd - 1
+		
+		while iForeward < iBackward {
+			
+			while array[iForeward] <= array[iPivot] && iForeward < iBackward {
+				iForeward++
+			}
+			
+			while array[iBackward] >= array[iPivot] && iForeward < iBackward {
+				iBackward--
+			}
+			
+			if iForeward != iBackward {
+				swap(&array[iForeward], &array[iBackward])
+			}
+		}
+		
+		if array[iPivot] < array[iForeward] {
+			if iPivot != iForeward - 1 {
+				swap(&array[iPivot], &array[iForeward - 1])
+				iPivot = iForeward - 1
+			}
+		} else {
+			if iPivot != iForeward {
+				swap(&array[iPivot], &array[iForeward])
+				iPivot = iForeward
+			}
+		}
+		
+		// recursively sort the smaller part and larger part
+		quickSort(&array, iBegin: iBegin, iEnd: iPivot)
+		quickSort(&array, iBegin: iPivot + 1, iEnd: iEnd)
+	}
+
+	// simplest approach is adopted
+	private class func quickSortPivot(inout array: [ItemT], iBegin: Int, iEnd: Int) -> Int{
+		return iBegin
+	}
 }
