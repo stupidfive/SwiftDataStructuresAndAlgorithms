@@ -22,6 +22,8 @@
 		E43F56C51BC2C02500226979 /* ArraySortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F56C41BC2C02500226979 /* ArraySortingTests.swift */; settings = {ASSET_TAGS = (); }; };
 		E43F56C71BCD2CDB00226979 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F56C61BCD2CDB00226979 /* Base64.swift */; settings = {ASSET_TAGS = (); }; };
 		E43F56CB1BD121D400226979 /* Base64Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F56CA1BD121D400226979 /* Base64Tests.swift */; settings = {ASSET_TAGS = (); }; };
+		E43F56CD1BD3D9CA00226979 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F56CC1BD3D9CA00226979 /* MD5.swift */; settings = {ASSET_TAGS = (); }; };
+		E43F56CF1BD3DA3D00226979 /* MD5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F56CE1BD3DA3D00226979 /* MD5Tests.swift */; settings = {ASSET_TAGS = (); }; };
 		E44FC62C1BAC3D4300C2BF61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FC62B1BAC3D4300C2BF61 /* AppDelegate.swift */; };
 		E44FC62E1BAC3D4300C2BF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44FC62D1BAC3D4300C2BF61 /* Assets.xcassets */; };
 		E44FC6311BAC3D4300C2BF61 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E44FC62F1BAC3D4300C2BF61 /* MainMenu.xib */; };
@@ -57,6 +59,8 @@
 		E43F56C41BC2C02500226979 /* ArraySortingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArraySortingTests.swift; sourceTree = "<group>"; };
 		E43F56C61BCD2CDB00226979 /* Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64.swift; sourceTree = "<group>"; };
 		E43F56CA1BD121D400226979 /* Base64Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64Tests.swift; sourceTree = "<group>"; };
+		E43F56CC1BD3D9CA00226979 /* MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		E43F56CE1BD3DA3D00226979 /* MD5Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5Tests.swift; sourceTree = "<group>"; };
 		E44FC6281BAC3D4300C2BF61 /* SwiftDataStructuresAndAlgorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataStructuresAndAlgorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44FC62B1BAC3D4300C2BF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E44FC62D1BAC3D4300C2BF61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 				E43F56BE1BB82AE500226979 /* RedBlackTree.swift */,
 				E43F56C21BC2C00000226979 /* ArraySorting.swift */,
 				E43F56C61BCD2CDB00226979 /* Base64.swift */,
+				E43F56CC1BD3D9CA00226979 /* MD5.swift */,
 				E44FC62D1BAC3D4300C2BF61 /* Assets.xcassets */,
 				E44FC62F1BAC3D4300C2BF61 /* MainMenu.xib */,
 				E44FC6321BAC3D4300C2BF61 /* Info.plist */,
@@ -139,6 +144,7 @@
 				E43F56C01BB82B2000226979 /* RedBlackTreeTests.swift */,
 				E43F56C41BC2C02500226979 /* ArraySortingTests.swift */,
 				E43F56CA1BD121D400226979 /* Base64Tests.swift */,
+				E43F56CE1BD3DA3D00226979 /* MD5Tests.swift */,
 				E44FC63D1BAC3D4300C2BF61 /* Info.plist */,
 			);
 			path = SwiftDataStructuresAndAlgorithmsTests;
@@ -245,6 +251,7 @@
 			files = (
 				E43F56AF1BB0297600226979 /* Queue.swift in Sources */,
 				E43F56AB1BB028ED00226979 /* Stack.swift in Sources */,
+				E43F56CD1BD3D9CA00226979 /* MD5.swift in Sources */,
 				E43F56C71BCD2CDB00226979 /* Base64.swift in Sources */,
 				E43F56B51BB02AAE00226979 /* BinarySearchTree.swift in Sources */,
 				E43F56B91BB57FCF00226979 /* SplayTree.swift in Sources */,
@@ -265,6 +272,7 @@
 				E43F56BD1BB6D1AD00226979 /* SplayTreeTests.swift in Sources */,
 				E43F56C51BC2C02500226979 /* ArraySortingTests.swift in Sources */,
 				E43F56B31BB02A9C00226979 /* BinarySearchTreeTests.swift in Sources */,
+				E43F56CF1BD3DA3D00226979 /* MD5Tests.swift in Sources */,
 				E4EA71CA1BADB05400B17AE0 /* DoublyLinkedListTests.swift in Sources */,
 				E43F56AD1BB0292700226979 /* StackTests.swift in Sources */,
 				E43F56C11BB82B2000226979 /* RedBlackTreeTests.swift in Sources */,
