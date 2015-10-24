@@ -37,6 +37,14 @@
                BlueprintName = "SwiftDataStructuresAndAlgorithmsTests"
                ReferencedContainer = "container:SwiftDataStructuresAndAlgorithms.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "ArraySortingTests">
+               </Test>
+               <Test
+                  Identifier = "Base64Tests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
