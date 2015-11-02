@@ -30,6 +30,10 @@
 		E43F56D91BDD218300226979 /* SelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F56D81BDD218300226979 /* SelectionTests.swift */; settings = {ASSET_TAGS = (); }; };
 		E43F56DB1BE1096900226979 /* BinaryHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F56DA1BE1096900226979 /* BinaryHeap.swift */; settings = {ASSET_TAGS = (); }; };
 		E43F56DF1BE109A500226979 /* BinaryHeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F56DE1BE109A500226979 /* BinaryHeapTests.swift */; settings = {ASSET_TAGS = (); }; };
+		E43F56E11BE10A8300226979 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F56E01BE10A8300226979 /* Graph.swift */; settings = {ASSET_TAGS = (); }; };
+		E43F56E31BE10B3600226979 /* DirectedGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F56E21BE10B3600226979 /* DirectedGraphTests.swift */; settings = {ASSET_TAGS = (); }; };
+		E43F56E51BE10B7E00226979 /* UndirectedGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F56E41BE10B7E00226979 /* UndirectedGraphTests.swift */; settings = {ASSET_TAGS = (); }; };
+		E43F56E71BE10BBB00226979 /* WeightedGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F56E61BE10BBB00226979 /* WeightedGraphTests.swift */; settings = {ASSET_TAGS = (); }; };
 		E44FC62C1BAC3D4300C2BF61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FC62B1BAC3D4300C2BF61 /* AppDelegate.swift */; };
 		E44FC62E1BAC3D4300C2BF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44FC62D1BAC3D4300C2BF61 /* Assets.xcassets */; };
 		E44FC6311BAC3D4300C2BF61 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E44FC62F1BAC3D4300C2BF61 /* MainMenu.xib */; };
@@ -73,6 +77,10 @@
 		E43F56D81BDD218300226979 /* SelectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionTests.swift; sourceTree = "<group>"; };
 		E43F56DA1BE1096900226979 /* BinaryHeap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryHeap.swift; sourceTree = "<group>"; };
 		E43F56DE1BE109A500226979 /* BinaryHeapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryHeapTests.swift; sourceTree = "<group>"; };
+		E43F56E01BE10A8300226979 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		E43F56E21BE10B3600226979 /* DirectedGraphTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectedGraphTests.swift; sourceTree = "<group>"; };
+		E43F56E41BE10B7E00226979 /* UndirectedGraphTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UndirectedGraphTests.swift; sourceTree = "<group>"; };
+		E43F56E61BE10BBB00226979 /* WeightedGraphTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightedGraphTests.swift; sourceTree = "<group>"; };
 		E44FC6281BAC3D4300C2BF61 /* SwiftDataStructuresAndAlgorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataStructuresAndAlgorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44FC62B1BAC3D4300C2BF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E44FC62D1BAC3D4300C2BF61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -140,6 +148,7 @@
 				E43F56D01BD5EA8800226979 /* SHA1.swift */,
 				E43F56D61BDD030400226979 /* Selection.swift */,
 				E43F56DA1BE1096900226979 /* BinaryHeap.swift */,
+				E43F56E01BE10A8300226979 /* Graph.swift */,
 				E44FC62D1BAC3D4300C2BF61 /* Assets.xcassets */,
 				E44FC62F1BAC3D4300C2BF61 /* MainMenu.xib */,
 				E44FC6321BAC3D4300C2BF61 /* Info.plist */,
@@ -163,6 +172,9 @@
 				E43F56D21BD7B65A00226979 /* SHA1Tests.swift */,
 				E43F56D81BDD218300226979 /* SelectionTests.swift */,
 				E43F56DE1BE109A500226979 /* BinaryHeapTests.swift */,
+				E43F56E21BE10B3600226979 /* DirectedGraphTests.swift */,
+				E43F56E41BE10B7E00226979 /* UndirectedGraphTests.swift */,
+				E43F56E61BE10BBB00226979 /* WeightedGraphTests.swift */,
 				E44FC63D1BAC3D4300C2BF61 /* Info.plist */,
 			);
 			path = SwiftDataStructuresAndAlgorithmsTests;
@@ -275,6 +287,7 @@
 				E43F56B51BB02AAE00226979 /* BinarySearchTree.swift in Sources */,
 				E43F56B91BB57FCF00226979 /* SplayTree.swift in Sources */,
 				E4EA71C41BAC40F400B17AE0 /* SinglyLinkedList.swift in Sources */,
+				E43F56E11BE10A8300226979 /* Graph.swift in Sources */,
 				E43F56BF1BB82AE500226979 /* RedBlackTree.swift in Sources */,
 				E43F56DB1BE1096900226979 /* BinaryHeap.swift in Sources */,
 				E43F56C31BC2C00000226979 /* ArraySorting.swift in Sources */,
@@ -289,6 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E43F56E51BE10B7E00226979 /* UndirectedGraphTests.swift in Sources */,
+				E43F56E31BE10B3600226979 /* DirectedGraphTests.swift in Sources */,
 				E43F56D91BDD218300226979 /* SelectionTests.swift in Sources */,
 				E43F56D31BD7B65A00226979 /* SHA1Tests.swift in Sources */,
 				E4EA71C61BAC410A00B17AE0 /* SinglyLinkedListTests.swift in Sources */,
@@ -296,6 +311,7 @@
 				E43F56C51BC2C02500226979 /* ArraySortingTests.swift in Sources */,
 				E43F56B31BB02A9C00226979 /* BinarySearchTreeTests.swift in Sources */,
 				E43F56DF1BE109A500226979 /* BinaryHeapTests.swift in Sources */,
+				E43F56E71BE10BBB00226979 /* WeightedGraphTests.swift in Sources */,
 				E43F56CF1BD3DA3D00226979 /* MD5Tests.swift in Sources */,
 				E4EA71CA1BADB05400B17AE0 /* DoublyLinkedListTests.swift in Sources */,
 				E43F56AD1BB0292700226979 /* StackTests.swift in Sources */,
