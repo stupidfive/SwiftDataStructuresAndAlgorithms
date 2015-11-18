@@ -32,6 +32,7 @@ public class Graph<KeyT: Hashable, WeightT: Numeric> : CustomStringConvertible {
 	
 	/// Weighted graph with a default weight
 	public init(directed: Bool, defaultWeight: WeightT) {
+		self.directed = directed
 		weighted = true
 		self.defaultWeight = defaultWeight
 	}
@@ -350,10 +351,12 @@ public class Graph<KeyT: Hashable, WeightT: Numeric> : CustomStringConvertible {
 				desc += ", "
 			}
 			
-			// remove last seperator ", "
-			desc.removeAtIndex(desc.endIndex.predecessor())
-			desc.removeAtIndex(desc.endIndex.predecessor())
-			
+			if !u.adj.isEmpty {
+				// remove last seperator ", "
+				desc.removeAtIndex(desc.endIndex.predecessor())
+				desc.removeAtIndex(desc.endIndex.predecessor())
+			}
+
 			desc += "]\n"
 		}
 		
